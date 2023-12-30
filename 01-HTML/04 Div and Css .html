@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Div tag and Css properties</title>
+	<style type="text/css">
+		.main{
+			 height: 540px;
+			 width: 1000px;
+			 background-color: red;
+		}
+		.Row1{
+			height: 100px;
+			width: 1000px;
+			background-color: blueviolet;
+			text-align: center;
+			font-size: 80px;
+			text-decoration: underline;
+			text-transform: uppercase;
+			word-spacing: 10px;
+			letter-spacing: 10px;
+		}
+		.Row2{
+			height: 40px;
+			width: 1000px;
+			background-color: orange;
+			font-size: 30px;
+			text-align: center;
+			font-style: italic;
+			color: blue;
+			text-transform: capitalize;
+		}
+		.Row2-Col12345{
+			height: 40px;
+			width: 200px;
+			float: left;
+		}
+		.Row3{
+			height: 200px;
+			width: 1000px;
+			background-color: blue;
+			font-size: 35px;
+			text-align: left;
+			font-weight: bolder;
+		}
+		.Row3-Col1{
+			height: 200px;
+			width: 250px;
+			background-color: lightpink;
+			float: left;
+		}
+		.Row3-Col1-12345{
+			height: 40px;
+			width: 200px;
+			float: left;
+		}
+		.Row3-Col2{
+			height: 200px;
+			width: 750px;
+			float: left;
+		}
+		.Row4{
+			height: 50px;
+			width: 1000px;
+			background-color: grey;
+			font-size: 35px;
+			text-align: Center;
+			text-transform: lowercase;
+		}
+		.Row5{
+			height: 100px;
+			width: 1000px;
+			background-color: lightgrey;
+		}
+		.Row5-Col123{
+			height: 100px;
+			width: 333.33;
+			float: left;
+		}
+		.Row6{
+			height: 50px;
+			width: 1000px;
+			text-align: center;
+			font-size: 35px;
+			font-weight: bold;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="Row1">
+			Ws cube Tech
+		</div>
+		<div class="Row2">
+				      <div class="Row2-Col12345">Home</div>
+				      <div class="Row2-Col12345">About</div>
+				      <div class="Row2-Col12345">Course</div>
+				      <div class="Row2-Col12345">Gallery</div>
+				      <div class="Row2-Col12345">Contact Us</div>
+		</div>
+		<div class="Row3">
+			<div class="Row3-Col1">
+			          <div class="Row3-Col1-Row12345">Home</div>
+				      <div class="Row3-Col1-Row12345">About</div>
+				      <div class="Row3-Col1-Row12345">Course</div>
+				      <div class="Row3-Col1-Row12345">Gallery</div>
+				      <div class="Row3-Col1-Row12345">Contact Us</div>
+			</div>
+			<div class="Row3-Col2">
+				<img src="sample images.jpg" height="200px" width="750px"/>
+			</div>
+		</div>
+		<div class="Row4">
+			Our Client
+		</div>
+		<div class="Row5">
+			          <div class="Row5-Col123"><img src="sample images.jpg" height="100px" width="333.33px"/></div>
+				      <div class="Row5-Col123"><img src="sample images.jpg" height="100px" width="333.33px"/></div>
+				      <div class="Row5-Col123"><img src="sample images.jpg" height="100px" width="333.33px"/></div>
+		</div>
+		<div class="Row6">
+			Home | About | Course | Gallery | Contact Us 
+		</div>
+
+	</div>
+
+</body>
+</html>

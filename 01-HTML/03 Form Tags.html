@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Tags</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Equariy</legend>
+			Name:-<input type="text" name="Name" placeholder="Enter your Name" autofocus ="" required ="" maxlength="10" list="Friends" /><br/><br/>
+			<datalist id="Friends">
+				<option value="yash">Yash</option>
+				<option value="vishal">vishal</option>
+				<option value="sonya">sonya</option>
+				<option value="kunal">kunal</option>
+				<option value="akash">akash</option>
+			</datalist>
+			Address:-<textarea name="Address" placeholder="Enter your Address" autofocus ="" required ="" maxlength="50" /></textarea><br/><br/>
+			Gender :-<input type="Radio"value="M" name="Gender" /> Male
+			         <input type="Radio"value="F" name="Gender"/> Female
+			         <input type="Radio"value="O" name="Gender" disabled =""/> Other<br/><br/>
+			Habitte:-<input type="checkbox" value="C" name="Habitte[]" checked =""/>Crikect
+			         <input type="checkbox" value="F" name="Habitte[]"/>Football
+			         <input type="checkbox" value="D" name="Habitte[]"/>Dancing<br/><br/>
+			Country:-<select>
+				             <optgroup label="A">
+				             	<option>Ind</option>
+				             	<option>Sl</option>
+				             	<option>AGf</option>
+				             </optgroup>
+				             <optgroup label="B">
+				                <option>US</option>
+				                <option>USA</option>
+				             </optgroup>
+			         </select>
+                     <br/><br/>
+           Image:-<input type="file" name="Image"/><br/><br/>
+
+           <b>Html 5 Tags<b><br/><br/>
+           Number:<input type="number" name="Number"><br/><br/>
+           Email:-<input type="email" name="Email"><br/><br/>
+           color:-<input type="color" name="color" value="yellow"><br/><br/>
+           Password :-<input type="password" name="Password"><br/><br/>
+           Hidden:-<input type="hidden" name="Hidden"><br/><br/>
+
+           <b>Html 5 Calender Element<b><br/><br/>
+           Date:-<input type="date" name="Date"><br/><br/>
+           Datetime-local:-<input type="datetime-local" name="Datetime-local"><br/><br/>
+           Time:-<input type="time" name="Time"><br/><br/>
+           Month:-<input type="month" name="Month"><br/><br/>
+           Week:-<input type="week" name="Week"><br/><br/>
+           Range:-<input type="range" name="Range" min="0" max="100"><br/><br/>
+
+			<input type="submit" name="">
+			<input type="reset" name="">
+		</fieldset>
+	</form>
+
+</body>
+</html>

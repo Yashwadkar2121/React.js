@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    
+</body>
+<script>
+// While loop
+while(condition){
+    // while condition
+}
+
+var mValue = 0
+while(mValue < 50){
+    mValue++
+}
+
+console.log(mValue);
+
+
+// For loop
+var mList = [1,2,3,4,,5,9]
+var pos;
+for(pos = 0 ,pos < mList.length; pos++;){
+    console.log('position -->' + pos + 'Value' + mList[pos])
+}
+
+// ForEach Loop
+    var cars = ["car1","car2","car3","car4","car5","car6"]
+
+    cars.forEach(cars);
+
+    function cars(item,index,array) {
+        document.write(item);
+    }
+
+// continue keyword
+    var pos;
+        for(pos = 0 ,pos < mList.length; pos++;){
+        if(pos % 2 !== 0) continue
+    console.log('position -->' + pos + 'Value' + mList[pos])
+    }
+
+// Break kewyword
+var pos;
+for(pos = 0 ,pos < mList.length; pos++;){
+    if(pos >= 3)break
+    console.log('position -->' + pos + 'Value' + mList[pos])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Scope and Environment 
+
+var num4 = 56;
+function sum(num5) {
+    console.log(num4 + num5)
+}
+
+sum(54)
+
+// Hosting Variable
+
+// Hosting Function
+
+sum(84)
+
+var num4 = 56;
+function sum(num5) {
+    console.log(num4 + num5)
+}
+
+sum(54)
+
+// Objects
+
+var mCars = {
+    "p1" : "350 kmph",
+    "p2" : "400 kmph",
+    "p3" : "500 kmph",
+    "p4" : "600 kmph"
+}
+
+console.log(mCars)
+console.log(typeof(mCars))
+</script>
+</html>

@@ -1,0 +1,32 @@
+/*Styling List*/
+style-list{
+	list-style-type: upper-alpha,lower-alpha,upper-roman,lower-roman;/*Use for ordered list	*/
+	list-style-type: disc,circle,square,none;/*Use for unordered list	*/
+	list-style-position: inside;
+}
+
+/*This is in following squences*/
+
+.links/*This is class*/:link/*This is a Link*/{
+	color: any;
+}
+.links/*This is class*/:visited/*This is a Link*/{
+	color: any;
+}
+.links/*This is class*/:hover/*This is a Link*/{
+	color: any;
+}
+.links/*This is class*/:active/*This is a Link*/{
+	color: any;
+}
+
+/*Styling Buttons*/
+.button{
+	background-color: any;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	outline: none;/*button outline non*/
+	cursor: pointer,not-allowed; /* it gives effect to cursor */
+	opacity: 0 to 1 ;
+}

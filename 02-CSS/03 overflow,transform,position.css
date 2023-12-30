@@ -1,0 +1,62 @@
+.overflow{
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  overflow: visible;
+  overflow: auto;
+  
+  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+/* Transform Property */
+.transform-translate{
+    transform: translate(10px,10px);
+    transform: translatex(10px);
+    transform: translatey(10px);
+  }
+  
+.transform-skew{
+    transform: skew(10rad);
+    transform: skewx(10rad);
+    transform: skewy(10rad);
+  
+    transform: skew(10deg);
+    transform: skewx(10deg);
+    transform: skewy(10deg);
+  
+    transform: skew(10turn);
+    transform: skewx(10turn);
+    transform: skewy(10turn);
+  }
+  
+.transform-rotate{
+    transform: rotatex(10rad);
+    transform: rotatey(10rad);
+    transform: rotatez(10rad);
+  
+    transform: rotatex(10deg);
+    transform: rotatey(10deg);
+    transform: rotatez(10deg);
+  }
+  
+.transform-scale{
+    transform: scale(1);
+    transform: scalex(1);
+    transform: scaley(1);
+  }
+
+/* Position */
+
+.position{
+    position: static;
+    position: sticky; /* It takes space to there own and fixed to screen */
+    position: relative; /* It takes space to there own */
+    position: absolute; /* It takes space to the body */
+    position: fixed;    /* It takes space to the body and fixed to screen */
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px ;
+}

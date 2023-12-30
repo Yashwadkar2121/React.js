@@ -1,0 +1,66 @@
+.Stylingtext{
+	color: any;
+	text-align: center,left,right,justify;
+	font-style: italic;
+	font-weight: bold or values 0 to 900;
+	text-decoration: underline,overline,line-through,none;
+	text-transform: uppercase,lowercase,capitalize;
+	letter-spacing: 1px or -1px;
+	word-spacing: 1px or -1px;
+	line-height: 1 to 10; /*it create a between space in 2 two lines 	*/
+	font-family: 'Poppins', sans-serif;; /*This use for import another font style	*/
+}
+
+.borders{
+	border-style: dotted,solid,dashed,double;
+	border-top-style: dotted,solid,dashed,double;
+	border-right-style: dotted,solid,dashed,double;
+    border-bottom-style: dotted,solid,dashed,double;
+    border-left-style: dotted,solid,dashed,double;
+	border-width: 1px;
+	border-color: white;
+
+   /*Short hand property*/
+   border: 1px solid blue;
+   	border-top: 1px solid rgb(255, 0, 191);
+	border-right: 1px solid rgb(0, 255, 0);
+    border-bottom:1px solid rgb(255, 145, 0);
+    border-left:1px solid rgb(0, 162, 255);
+
+/* it convert the border into round shap   */
+   border-radius: 20px;
+}
+
+.paddings{
+	padding: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+
+	/*Short hand property*/
+	padding: 12px 20px 12px 20px;
+	padding: 12px 20px;
+}
+
+.margin{
+	margin: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+    
+    /*Short hand property*/
+	margin: 12px 20px 12px 20px;
+	margin: 12px 20px;
+}
+
+.float{
+  float: left;
+  float: right;
+  clear: both; /* this style clear a float value */
+}
+
+
+
+

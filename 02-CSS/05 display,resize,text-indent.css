@@ -1,0 +1,50 @@
+.display{
+    display: none;
+    display: block;
+    display: inline;
+    display: inline-block;
+    
+    display: flex; /* it like a float value */
+    flex-direction: row,row-reverse,column,column-reverse;
+	justify-content: space-between,space-around,flex-start,flex-end,center;
+    /*When content is overflow	*/
+	flex-wrap: wrap,wrap-reverse,nowrap;
+    flex-grow: 0 to nth;
+    flex-shrink: 0 to nth;
+    flex-basis: 0px to nth;
+
+    /* it crate block and dot */
+    display: list-item; 
+
+    /* it use for row and colume  */
+    display: grid; 
+    grid-template-columns: 100px 100px 100px auto;
+    grid-column-gap:10px;
+    grid-template-rows: 100px 100px 100px auto;
+    grid-row-gap:20px;
+    /* short hand property of grid-gap */
+    grid-gap: row=10px col=15px;
+    /* start-end madtory */
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    justify-content: start,end,center,space-around,space-between;
+    /*	When you increase a height of a div it increase a height of a content*/
+    align-items: stretch;
+    align-items:space-between,space-around,flex-start,flex-end,center;
+
+}
+/* user can resize the element */
+.resize{
+    resize: both;
+    resize: horizontal;
+    resize: vertical;
+}
+/*first letter of paragraph position change  */
+.text-indent{
+    text-indent: 50px;
+}
+
