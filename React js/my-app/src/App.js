@@ -7,7 +7,7 @@ function App() {
     <>
       <Navbar title="My-App" />
       <div className="container">
-        <TextForm heading="Enter The text to analyze" />
+        <TextForm heading="Enter The text :-" />
       </div>
     </>
   );
