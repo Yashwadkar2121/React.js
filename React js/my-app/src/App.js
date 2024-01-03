@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import About from "./components/About";
-import Navbar from "./components/Navbar";
-import TextForm from "./components/TextForm";
+import About from "./components/03-About";
+import Navbar from "./components/01-Navbar";
+import TextForm from "./components/02-TextForm";
 
 function App() {
   const [mode, setMode] = useState("light"); // Whwther dark is enabled or not
