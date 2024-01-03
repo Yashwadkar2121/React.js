@@ -21,15 +21,22 @@ export default function TextForm(props) {
   //   setText = ("new text") ; Correct way to cahnge the state
   return (
     <>
-      <div>
-        <h1>{props.heading} :-</h1>
+      <div className="contanier">
+        <h1 style={{ color: props.mode === "dark" ? "white" : "black" }}>
+          {props.heading} :-
+        </h1>
         <div className="mb-3">
           <textarea
             className="form-control"
             id="myBox"
             rows="8"
+            // Added ele.
             value={text}
             onChange={handleOnChange}
+            style={{
+              backgroundColor: props.mode === "dark" ? "grey" : "white",
+              color: props.mode === "dark" ? "white" : "black",
+            }}
           ></textarea>
         </div>
         <button className="btn btn-primary" onClick={handleUpClick}>
@@ -42,7 +49,10 @@ export default function TextForm(props) {
           Clear
         </button>
       </div>
-      <div className="container my-3 ">
+      <div
+        className="container my-3 "
+        style={{ color: props.mode === "dark" ? "white" : "black" }}
+      >
         <h2>Your Text Summary</h2>
         <p>
           <b>{text.split(" ").length}</b> Words and <b>{text.length}</b>{" "}
@@ -52,7 +62,11 @@ export default function TextForm(props) {
           <b>{0.008 * text.split(" ").length}</b> Read
         </p>
         <h2>Preview</h2>
-        <p>{text}</p>
+        <p>
+          {text.length > 0
+            ? text
+            : "Enter something in the above to preview it here"}
+        </p>
       </div>
     </>
   );
