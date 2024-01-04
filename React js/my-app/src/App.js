@@ -4,6 +4,7 @@ import About from "./components/03-About";
 import Navbar from "./components/01-Navbar";
 import TextForm from "./components/02-TextForm";
 import Alert from "./components/04-Alert";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   // 02-TextForm--> Enable Dark mode
@@ -34,16 +35,30 @@ function App() {
 
   return (
     <>
+      {/* <Router> */}
       <Navbar title="My-App" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
-      <div className="container">
+      <div className="container my-3">
         <TextForm
           heading="Enter The text Analyze Below"
           mode={mode}
           showAlert={showAlert}
         />
         <About />
+        {/* <Switch>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route exact path="/">
+              <TextForm
+                heading="Enter The text Analyze Below"
+                mode={mode}
+                showAlert={showAlert}
+              />
+            </Route> */}
+        {/* </Switch> */}
       </div>
+      {/* </Router> */}
     </>
   );
 }
