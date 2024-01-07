@@ -1,6 +1,6 @@
 function KgButton() {
   return;
-  <button>like a video</button>;
+  <button type="button">Hellow</button>;
 }
 
 export default KgButton;

@@ -6,7 +6,7 @@ function App() {
     <div>
       <h1>Hello Another Componemts are Not Working</h1>
       <button>Comment</button>
-      <KgButton />
+      <KgButton></KgButton>
     </div>
   );
 }
