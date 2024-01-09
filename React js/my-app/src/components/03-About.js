@@ -1,32 +1,46 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function About() {
-  const [myStyle, setMyStyle] = useState({
-    color: "white",
-    backgroundColor: "black",
-  });
+export default function About(props) {
+  // const [myStyle, setMyStyle] = useState({
+  //   color: "white",
+  //   backgroundColor: "black",
+  // });
 
-  const [btnText, setBtnText] = useState("Enable Dark Mode");
+  // const [btnText, setBtnText] = useState("Enable Dark Mode");
 
-  const toggleStyle = () => {
-    if (myStyle.color === "white") {
-      setMyStyle({
-        color: "black",
-        backgroundColor: "white",
-      });
-      setBtnText("Enable Dark Mode");
-    } else {
-      setMyStyle({
-        color: "white",
-        backgroundColor: "black",
-      });
-      setBtnText("Enable Light Mode");
-    }
+  // const toggleStyle = () => {
+  //   if (myStyle.color === "white") {
+  //     setMyStyle({
+  //       color: "black",
+  //       backgroundColor: "white",
+  //     });
+  //     setBtnText("Enable Dark Mode");
+  //   } else {
+  //     setMyStyle({
+  //       color: "white",
+  //       backgroundColor: "black",
+  //     });
+  //     setBtnText("Enable Light Mode");
+  //   }
+  // };
+
+  let myStyle = {
+    color: props.mode === "dark" ? "white" : "#042743",
+    backgroundColor: props.mode === "dark" ? "#042743" : "white",
+    border: "1px solid",
+    borderColor: props.mode === "dark" ? "white" : "#042743",
   };
   return (
     <>
-      <div className="container" style={myStyle}>
-        <h1>About Us</h1>
+      <div className="container">
+        <h1
+          className="my-3"
+          style={{
+            color: props.mode === "dark" ? "white" : "#042743",
+          }}
+        >
+          About Us
+        </h1>
         <div className="accordion" id="accordionExample">
           <div className="accordion-item">
             <h2 className="accordion-header">
@@ -126,13 +140,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      <button
-        type="button"
-        className="btn btn-info my-3 mx-2"
-        onClick={toggleStyle}
-      >
-        {btnText}
-      </button>
     </>
   );
 }

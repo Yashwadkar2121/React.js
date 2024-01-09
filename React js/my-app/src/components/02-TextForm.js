@@ -16,10 +16,23 @@ export default function TextForm(props) {
     setText(newText);
     props.showAlert("Clear the Text!", "success");
   };
+  // const handleCopyClick = () => {
+  //   let text = document.getElementById("my-Box");
+  //   text.select();
+  //   document.getSelection().removeAllRanges();
+  //   navigator.clipboard.writeText(text.value);
+
+  //   props.showAlert("Coiped to Clipboard!", "success");
+  // };
+  // const handleExtraspaces = () => {
+  //   let newText = text.split[/[]+/];
+  //   setText(newText.join(" "));
+  //   props.showAlert("Extra Spaces Removed !", "success");
+  // };
   const handleOnChange = (event) => {
     setText(event.target.value);
   };
-  const [text, setText] = useState("Enter the Text");
+  const [text, setText] = useState("");
   //   text = "new text"; Wrong way to change the state
   //   setText = ("new text") ; Correct way to cahnge the state
   return (
@@ -37,18 +50,30 @@ export default function TextForm(props) {
             value={text}
             onChange={handleOnChange}
             style={{
-              backgroundColor: props.mode === "dark" ? "grey" : "white",
+              backgroundColor: props.mode === "dark" ? "#13466e" : "white",
               color: props.mode === "dark" ? "white" : "black",
             }}
           ></textarea>
         </div>
-        <button className="btn btn-primary" onClick={handleUpClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx-1 my-1"
+          onClick={handleUpClick}
+        >
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary mx-3" onClick={handleLowClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx-1 my-1"
+          onClick={handleLowClick}
+        >
           Convert to Lowercase
         </button>
-        <button className="btn btn-danger mx-1" onClick={handleClearClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-danger mx-1 my-1"
+          onClick={handleClearClick}
+        >
           Clear
         </button>
       </div>
@@ -58,11 +83,24 @@ export default function TextForm(props) {
       >
         <h2>Your Text Summary</h2>
         <p>
-          <b>{text.split(" ").length}</b> Words and <b>{text.length}</b>{" "}
-          Characters
+          {/* Fix the 0 Word count by filter()  Function*/}
+          <b>
+            {
+              text.split(" ").filter((ele) => {
+                return ele.length !== 0;
+              }).length
+            }
+          </b>{" "}
+          Words and <b>{text.length}</b> Characters
         </p>
         <p>
-          <b>{0.008 * text.split(" ").length}</b> Read
+          <b>
+            {0.008 *
+              text.split(" ").filter((ele) => {
+                return ele.length !== 0;
+              }).length}
+          </b>{" "}
+          Read
         </p>
         <h2>Preview</h2>
         <p>
